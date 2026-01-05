@@ -3,6 +3,13 @@
 
 :root{
     --h-title-color:#3948d2;
+    --bs-primary: #2937f0; /* Keep your primary blue */
+}
+
+body {
+    font-family: 'Mulish', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background for the whole page */
+    color: #212529;
 }
 
 .header {
@@ -107,6 +114,73 @@ section .main-body{
     #avatar {
         margin: 0;
     }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+    color: #2c3e50;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #6c757d !important;
+    transition: color 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--bs-primary) !important;
+}
+
+/* Markdown Content Styling */
+.markdown-body {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+}
+
+.markdown-body h1, 
+.markdown-body h2, 
+.markdown-body h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.markdown-body a {
+    color: var(--bs-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.markdown-body a:hover {
+    text-decoration: underline;
+}
+
+.markdown-body ul {
+    padding-left: 1.2rem;
+}
+
+.markdown-body li {
+    margin-bottom: 0.5rem;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 0.75rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Profile Image */
+.img-fluid.rounded-circle {
+    border: 5px solid #fff; /* White border around profile pic */
 }
 
 
